@@ -1,0 +1,2 @@
+jack_control start
+recordmydesktop --use-jack system:capture_1 -o ~/videos/business/screenrecordings/recording.ogv

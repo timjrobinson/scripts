@@ -1,0 +1,1 @@
+chromium --disk-cache-dir=/tmp/chromium --user-data-dir=${HOME}/.chromium/session${DISPLAY}

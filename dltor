@@ -1,0 +1,2 @@
+CWD=$(pwd)
+deluge-console "add -p $CWD $1"
