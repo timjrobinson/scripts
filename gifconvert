@@ -4,8 +4,9 @@
 # See here for explanation: https://github.com/lelandbatey/configDebDev/blob/master/helpFiles.txt#L113
  
 TEMP=$(mktemp -d)
-ffmpeg -i $1 $TEMP/out%04d.gif # Extracts each frame of the video as a single gif
-convert -delay 4 $TEMP/out*.gif $TEMP/anim.gif # Combines all the frames into one very nicely animated gif.
+ffmpeg -i $1 -q:v 1 -vframes 30 -ss 00:00:03 $TEMP/out_%04d.png # Extracts each frame of the video as a single gif
+#rm $TEMP/out_*[13579].png
+convert -delay 6 $TEMP/out*.png -dither none $TEMP/anim.gif # Combines all the frames into one very nicely animated gif.
 convert -layers Optimize $TEMP/anim.gif $1.gif # Optimizes the gif using imagemagick
  
 # vvvvv Cleans up the leftovers
