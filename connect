@@ -1,0 +1,8 @@
+#! /bin/bash
+
+if [ "$1" == 'home' ]; then
+	sudo netctl switch-to wlsuperawesomewireless
+fi
+if [ "$1" == 'rcl' ]; then
+	sudo netctl switch-to wlRCL5GHZ
+fi

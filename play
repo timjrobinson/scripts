@@ -1,0 +1,8 @@
+#! /bin/bash
+
+if [ "$1" == 'trance' ]; then
+	mplayer -playlist http://www.trance.fm/play/tc192.pls
+fi
+if [ "$1" == 'hardstyle' ]; then
+	mplayer -playlist http://www.trance.fm/play/hard192.pls
+fi

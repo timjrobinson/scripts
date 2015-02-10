@@ -1,0 +1,1 @@
+convert $1 -coalesce -repage 0x0 -crop $2x$3+$4+$5 +repage $1.crop.gif
