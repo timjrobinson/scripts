@@ -1,5 +1,2 @@
-#!/bin/bash
-# Kills all docker containers that match grep pattern specified
-
-local NAME=$1
-for I in `sudo docker ps | grep $NAME | awk '{print $1}'`; do docker kill $I & done
+sudo docker ps | grep $1 | awk '{print $1}' | xargs sudo docker stop 
+sudo docker ps -a | grep $1 | awk '{print $1}' | xargs sudo docker rm

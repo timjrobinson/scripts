@@ -1,0 +1,7 @@
+PROGRAM=$1
+
+if [ "$PROGRAM" == "docker" ]; then
+	sudo apt-get remove docker
+	mount | grep /var/lib/docker | awk '{print $1}' | grep "\/var\/lib\/docker" | sed "s/-loopback$//" | xargs umount
+	sudo rm -rf /var/lib/docker
+fi
