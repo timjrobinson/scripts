@@ -1,0 +1,1 @@
+sudo docker ps | awk '{ print $1 }' | tail -1 | xargs docker inspect | jq '.[0].NetworkSettings.IPAddress'
