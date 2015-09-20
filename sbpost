@@ -1,0 +1,4 @@
+TOKEN="$SLACK_TOKEN"
+MESSAGE="$1"
+CHANNEL=${2:-"testbots"}
+curl --data "${MESSAGE}" "https://cloud9ide.slack.com/services/hooks/slackbot?token=${TOKEN}&channel=%23${CHANNEL}"
