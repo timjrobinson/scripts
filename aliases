@@ -1,1 +1,7 @@
 alias gp="git push origin HEAD"
+alias ga="git add -u"
+alias gc="git commit -m"
+alias gs="git status"
+alias gcm="git checkout master"
+alias gu="git pull"
+alias gmm="git fetch && git merge origin/master"
