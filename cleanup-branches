@@ -1,1 +1,2 @@
+git checkout master || { echo "Failed to switch to master. Aborting"; exit 1; }
 git branch --merged | grep -v "\*" | xargs -n 1 git branch -d

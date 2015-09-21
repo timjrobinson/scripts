@@ -1,1 +1,2 @@
-git checkout -b $1 master
+BRANCH_NAME=$1
+git checkout -b $BRANCH_NAME master
