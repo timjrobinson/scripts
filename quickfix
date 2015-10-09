@@ -11,9 +11,6 @@ then
     exit 1
 fi
 
-git checkout master
-git pull
-git checkout -b "$BRANCH"
-git add -u
-git commit -m "$MESSAGE"
+git checkout -b "$BRANCH" master
+git commit -am "$MESSAGE"
 git push origin HEAD
