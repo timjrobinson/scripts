@@ -17,10 +17,11 @@ usage() {
 [[ -z $1 ]] && usage && exit 1
 
 unset PATCH
-while getopts ":p" OPTION
+while getopts ":ph" OPTION
 do
 	case $OPTION in
 		p) PATCH=1 ;;
+		h) usage; exit 1 ;;
 	esac
 done
 shift $(( OPTIND - 1 ))
@@ -39,7 +40,7 @@ else
 	echo "Branch: $BRANCH"
 
 	read -p "Does this look good? [y/N] " -n 1 -r
-	echo    
+	echo
 	if [[ ! $REPLY =~ ^[Yy]$ ]]
 	then
 		exit 1
