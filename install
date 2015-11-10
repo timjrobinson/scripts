@@ -1,5 +1,4 @@
-echo 'PATH="~/scripts:$PATH"' >> ~/.bashrc
-echo 'source ~/scripts/aliases' >> ~/.bashrc
+echo 'source ~/scripts/include' >> ~/.bashrc
 
 git config --global core.editor "vim"
 

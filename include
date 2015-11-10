@@ -7,3 +7,5 @@ fi
 if [[ -f $DIR/envvars ]]; then
     . $DIR/envvars
 fi
+
+PATH="$DIR:$PATH"
