@@ -1,0 +1,11 @@
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+if [[ -f $DIR/aliases ]]; then
+    . $DIR/aliases
+fi
+
+if [[ -f $DIR/envvars ]]; then
+    . $DIR/envvars
+fi
+
+PATH="$DIR:$PATH"
