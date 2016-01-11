@@ -2,5 +2,3 @@ echo 'source ~/scripts/include' >> ~/.bashrc
 
 git config --global core.editor "vim"
 
-~/scripts/include/gitaliases
-
