@@ -1,0 +1,5 @@
+#!/bin/bash
+# Git set upstream to origin/branchname
+
+BRANCH=$(git name-rev --name-only HEAD)
+git branch -u origin/$BRANCH 
