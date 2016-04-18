@@ -1,4 +1,6 @@
+alias ll="ls -la"
 alias gp="git push origin HEAD"
+alias gpf="git push origin +HEAD"
 alias ga="git add -u"
 alias gc="git commit -am"
 alias gs="git status"
