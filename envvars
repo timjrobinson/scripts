@@ -1,1 +1,4 @@
 export LPASS_AGENT_TIMEOUT=0
+
+hn=$(hostname)
+export PS1='[$(whoami)@${hn%%.*} $(pwd)]\$ '
