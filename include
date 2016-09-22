@@ -9,3 +9,9 @@ if [[ -f $DIR/envvars ]]; then
 fi
 
 PATH="$DIR:$PATH"
+
+mcd ()
+{
+    mkdir -p -- "$1" &&
+      cd -P -- "$1"
+}
