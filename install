@@ -1,4 +1,5 @@
 #!/bin/bash
+DIR="$(cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd)"
 
 [ -e ~/.bashrc ] && (grep 'include-rc' ~/.bashrc &>/dev/null || echo 'source ~/scripts/include-rc' >> ~/.bashrc)
 [ -e ~/.zshrc ] && (grep 'include-rc' ~/.zshrc &>/dev/null || echo 'source ~/scripts/include-rc' >> ~/.zshrc)
@@ -15,3 +16,7 @@ read git_email
 echo "What is your git name?"
 read git_name
 [ -n "$git_name" ] && git config --global user.name "$git_name"
+
+if [ -e ~/.config/i3/config ]; then cp $DIR/i3config ~/.config/i3/config; fi
+
+
