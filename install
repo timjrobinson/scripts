@@ -8,6 +8,7 @@
 
 git config --global core.editor "vim"
 
+echo "You can leave any of the following questions blank to use your current setting"
 echo "What is your git email?"
 read git_email
 [ -n "$git_email" ] && git config --global user.email "$git_email"
