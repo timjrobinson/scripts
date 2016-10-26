@@ -1,0 +1,9 @@
+Setup tasks that can't be scripted
+
+- Allow root access without password:
+
+Run `visudo`
+At the end insert `tim ALL=(ALL) NOPASSWD:ALL`
+
+-
+

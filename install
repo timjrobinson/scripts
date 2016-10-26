@@ -16,7 +16,9 @@ read git_email
 echo "What is your git name?"
 read git_name
 [ -n "$git_name" ] && git config --global user.name "$git_name"
+echo "Do you want to install i3wm?"
+read ii3wm
+[ "$ii3wm" =~ "[Yy]" ] && $DIR/install-i3wm
 
-if [ -e ~/.config/i3/config ]; then cp $DIR/i3config ~/.config/i3/config; fi
 
 
