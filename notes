@@ -5,5 +5,6 @@ Setup tasks that can't be scripted
 Run `visudo`
 At the end insert `tim ALL=(ALL) NOPASSWD:ALL`
 
--
+- Other
+Add passwd to root user, same as local user, so that i3lock doesn't completely lock me out if I accidently run it as root. 
 
