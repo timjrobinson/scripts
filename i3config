@@ -178,6 +178,14 @@ bindsym XF86AudioPause exec playerctl pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
+assign [class="Slack"] 4
+assign [class="Skype"] 4
+assign [class="^[Ss]kype.*"] 4
+assign [class="Spotify"] 5
+assign [class=".*chrome.*"] 1
+
+exec --no-startup-id i3-msg 'workspace 5, exec /usr/bin/spotify'
 exec --no-startup-id i3-msg 'workspace 1, exec /usr/bin/google-chrome'
 exec --no-startup-id i3-msg 'workspace 4, exec /usr/bin/slack'
-exec --no-startup-id i3-msg 'workspace 5, exec /usr/bin/spotify'
+exec --no-startup-id i3-msg 'workspace 4, exec /usr/bin/skypeforlinux'
+
