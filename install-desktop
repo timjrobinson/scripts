@@ -1,0 +1,9 @@
+#!/bin/bash
+
+sudo apt-get update
+wget https://github.com/acrisci/playerctl/releases/download/v0.5.0/playerctl-0.5.0_amd64.deb -P /tmp/
+sudo dpkg -i /tmp/playerctl-0.5.0_amd64.deb
+
+echo "Do you want to install i3wm?"
+read ii3wm
+[ "$ii3wm" =~ "[Yy]" ] && $DIR/install-i3wm
