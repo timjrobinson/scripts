@@ -190,7 +190,6 @@ assign [class="Slack"] 4
 assign [class="Skype"] 4
 assign [class="^[Ss]kype.*"] 4
 assign [class="Spotify"] 5
-assign [class=".*chrome.*"] 1
 
 # Start applications at startup
 exec --no-startup-id i3-msg 'workspace 5, exec /usr/bin/spotify'
