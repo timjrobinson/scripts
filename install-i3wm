@@ -4,4 +4,5 @@ sudo apt-get update
 sudo apt-get install i3wm i3lock
 if [ -e ~/.config/i3/config ]; then cp $DIR/i3config ~/.config/i3/config; fi
 
+settings set org.gnome.desktop.background show-desktop-icons false
 
