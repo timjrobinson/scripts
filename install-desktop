@@ -9,3 +9,6 @@ sudo dpkg -i /tmp/playerctl-0.5.0_amd64.deb
 echo "Do you want to install i3wm?"
 read ii3wm
 [ "$ii3wm" =~ "[Yy]" ] && $DIR/install-i3wm
+
+grep "^HandleLidSwitchDocked=" /etc/systemd/logind.conf || sudo echo "HandleLidSwitchDocked=hibernate" >> /etc/systemd/logind.conf
+grep "^HandleLidSwitch=" /etc/systemd/logind.conf || sudo echo "HandleLidSwitch=hibernate" >> /etc/systemd/logind.conf
