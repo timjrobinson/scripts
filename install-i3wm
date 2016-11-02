@@ -6,3 +6,11 @@ if [ -e ~/.config/i3/config ]; then cp $DIR/i3config ~/.config/i3/config; fi
 
 settings set org.gnome.desktop.background show-desktop-icons false
 
+pushd ~
+git clone git@github.com:meskarune/i3lock-fancy.git
+cd i3lock-fancy
+git checkout dualmonitors
+popd
+
+ln -s ~/i3lock-fancy/lock ~/bin/lock
+
