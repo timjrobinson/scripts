@@ -16,6 +16,10 @@ echo "Do you want to install i3wm?"
 read ii3wm
 [[ "$ii3wm" =~ ^[Yy]$ ]] && $DIR/install-i3wm
 
+echo "Do you want to install spotify?"
+read ispot
+[[ "$ispot" =~ ^[Yy]$ ]] && $DIR/install-spotify
+
 sudo grep "^HandleLidSwitchDocked=" /etc/systemd/logind.conf || sudo echo "HandleLidSwitchDocked=hibernate" >> /etc/systemd/logind.conf
 sudo grep "^HandleLidSwitch=" /etc/systemd/logind.conf || sudo echo "HandleLidSwitch=hibernate" >> /etc/systemd/logind.conf
 
