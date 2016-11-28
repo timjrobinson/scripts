@@ -18,7 +18,7 @@ read git_name
 [ -n "$git_name" ] && git config --global user.name "$git_name"
 echo "Do you wish to install desktop tools (i3wm, media playing etc)"
 read idesktop
-[ -n "$idesktop" ] && $DIR/install-desktop
+[[ "$idesktop" =~ ^[Yy]$ ]] && $DIR/install-desktop
 
 
 
