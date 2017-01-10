@@ -1,0 +1,50 @@
+#!/bin/bash
+# Prints the content of a given file, or specific lines of that file, for each revision.
+# Based on http://stackoverflow.com/questions/17785265/list-all-the-versions-of-a-given-line-number-in-the-git-history
+# Place this somewhere in your path and you can invoke it with `git timemachine ...` (see full usage below)
+
+function usage() {
+    echo ""
+    echo "Usage: $(basename $0) FILE [STARTLINE [ENDLINE]]" >&2
+    echo ""
+}
+
+if [ $# -eq 0 ] 
+then
+    usage
+    exit 1
+fi
+
+if [ $# -ge 4 ]
+then
+    usage
+    exit 2
+fi
+
+if [ $# -ge 1 ] 
+then
+    FILE=$1
+fi
+
+if [ $# -eq 2 ]
+then
+    LINES="-L $2,$2"
+fi
+
+if [ $# -eq 3 ]
+then
+    LINES="-L $2,$3"
+fi
+
+OLD="" 
+for REV in $(git log --format=format:%H $FILE)
+do
+    NEW=$(git blame $FILE $LINES $REV)
+    if [ "$OLD" != "$NEW" ]
+    then 
+        echo "=== As of revision $REV ==="
+        echo "$NEW"
+        echo ""
+        OLD=$NEW
+    fi
+done
