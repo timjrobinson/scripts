@@ -15,6 +15,16 @@ gsettings set org.gnome.desktop.background show-desktop-icons false
 # Fixing Hibernate on HP Elitebook
 sudo echo "HandleLidSwitchDocked=suspend" &>> /etc/systemd/logind.conf
 
+# Binding scrot to ctrl + shift + 4 (like mac screenshot area)
+# Add this to ~/.xbindkeysrc
+
+"~/scripts/screenshot-area"
+  control+shift + 4
+
+# Then run xbindkeys -p
+# Also may need to add xbindkeys to my .bashrc file
+
+
 TODO
 - pavucontrol
 - atom

@@ -2,6 +2,9 @@
 
 DIR="$(cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd)"
 
+# For Scrot screenshots
+mkdir -p ~/Pictures/screenshots
+
 if [ -z "$(which xbacklight)" ]; then
 sudo apt-get update
 sudo apt-get install xbacklight
@@ -22,4 +25,3 @@ read ispot
 
 sudo grep "^HandleLidSwitchDocked=" /etc/systemd/logind.conf || sudo echo "HandleLidSwitchDocked=hibernate" >> /etc/systemd/logind.conf
 sudo grep "^HandleLidSwitch=" /etc/systemd/logind.conf || sudo echo "HandleLidSwitch=hibernate" >> /etc/systemd/logind.conf
-
