@@ -1,4 +1,25 @@
-echo 'source ~/scripts/include' >> ~/.bashrc
+#!/bin/bash
+DIR="$(cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd)"
+
+[ -e ~/.bashrc ] && (grep 'include-rc' ~/.bashrc &>/dev/null || echo 'source ~/scripts/include-rc' >> ~/.bashrc)
+[ -e ~/.zshrc ] && (grep 'include-rc' ~/.zshrc &>/dev/null || echo 'source ~/scripts/include-rc' >> ~/.zshrc)
+
+[ -e ~/.profile ] && (grep 'include-profile' ~/.profile &>/dev/null || echo 'source ~/scripts/include-profile' >> ~/.profile)
+[ -e ~/.zprofile ] && (grep 'include-profile' ~/.zprofile &>/dev/null || echo 'source ~/scripts/include-profile' >> ~/.zprofile)
 
 git config --global core.editor "vim"
+
+echo "You can leave any of the following questions blank to use your current setting"
+echo "What is your git email?"
+read git_email
+[ -n "$git_email" ] && git config --global user.email "$git_email"
+echo "What is your git name?"
+read git_name
+[ -n "$git_name" ] && git config --global user.name "$git_name"
+echo "Do you wish to install desktop tools (i3wm, media playing etc)"
+read idesktop
+[[ "$idesktop" =~ ^[Yy]$ ]] && $DIR/install-desktop
+
+
+
 
