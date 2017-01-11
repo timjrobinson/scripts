@@ -8,6 +8,12 @@ At the end insert `tim ALL=(ALL) NOPASSWD:ALL`
 - Other
 Add passwd to root user, same as local user, so that i3lock doesn't completely lock me out if I accidently run it as root. 
 
+# Disable nautilus desktop background:
+gsettings set org.gnome.desktop.background show-desktop-icons false
+
+
+# Fixing Hibernate on HP Elitebook
+sudo echo "HandleLidSwitchDocked=suspend" &>> /etc/systemd/logind.conf
 
 TODO
 - pavucontrol
@@ -18,3 +24,4 @@ TODO
 -- sudo pip install tzupdate (I had to fully switch to root instead of just running this)
 -- sudo tzupdate
 - solaar (software for pairing logitech mice with PC)
+
