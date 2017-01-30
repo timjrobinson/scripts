@@ -1,3 +1,5 @@
 BRANCH_NAME=$1
-git update-ref refs/heads/master refs/remotes/origin/master
-git checkout -b $BRANCH_NAME master
+MASTER_BRANCH="master"
+[ -e .git/refs/remotes/origin/master ] || MASTER_BRANCH="mainline"
+git update-ref refs/heads/$MASTER_BRANCH refs/remotes/origin/$MASTER_BRANCH
+git checkout -b $BRANCH_NAME $MASTER_BRANCH
