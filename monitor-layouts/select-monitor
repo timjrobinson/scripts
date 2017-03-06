@@ -1,0 +1,23 @@
+#!/bin/bash
+DIR="$(cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd)"
+
+MONSCRIPT=""
+
+LAYOUT_MD5="$(xrandr | grep -oPe ".* connected.*\+" | md5sum | awk '{print $1}')"
+
+case $LAYOUT_MD5 in 
+	9e60df29b7ae1b771c9c94a1d024ee28)
+		MONSCRIPT="mon-hp-multi"
+		;;
+	default)
+		;;
+esac
+
+if [ -n "$MONSCRIPT" ]; then	
+	$DIR/$MONSCRIPT
+fi
+	
+	
+
+
+
