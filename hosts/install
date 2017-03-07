@@ -1,0 +1,7 @@
+#!/bin/bash
+
+while read -r HOST; do
+	if ! grep "$HOST" /etc/hosts >/dev/null; then
+		echo "127.0.0.1 $HOST www.$HOST" | sudo tee -a /etc/hosts
+	fi
+done < blocked
