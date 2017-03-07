@@ -6,7 +6,7 @@ MONSCRIPT=""
 LAYOUT_MD5="$(xrandr | grep -oPe ".* connected.*\+" | md5sum | awk '{print $1}')"
 
 case $LAYOUT_MD5 in 
-	9e60df29b7ae1b771c9c94a1d024ee28)
+	bef7e2bddb41edd9b85f11ba6e922c90)
 		MONSCRIPT="mon-hp-multi"
 		;;
 	default)
