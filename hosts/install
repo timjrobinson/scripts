@@ -1,7 +1,9 @@
 #!/bin/bash
 
+DIR="$(cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd)"
+
 while read -r HOST; do
 	if ! grep "$HOST" /etc/hosts >/dev/null; then
 		echo "127.0.0.1 $HOST www.$HOST" | sudo tee -a /etc/hosts
 	fi
-done < blocked
+done < $DIR/blocked
