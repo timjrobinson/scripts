@@ -1,0 +1,4 @@
+#!/bin/bash
+
+setxkbmap -layout us -option caps:escape
+$DIR/monitor-layouts/select-monitor
