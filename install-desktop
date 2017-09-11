@@ -2,6 +2,9 @@
 
 DIR="$(cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd)"
 
+[ -e ~/.profile ] && (grep 'include-desktop' ~/.profile &>/dev/null || echo 'source ~/scripts/include-desktop' >> ~/.profile)
+[ -e ~/.zprofile ] && (grep 'include-desktop' ~/.zprofile &>/dev/null || echo 'source ~/scripts/include-desktop' >> ~/.zprofile)
+
 # For Scrot screenshots
 mkdir -p ~/Pictures/screenshots
 
