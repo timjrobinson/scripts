@@ -24,6 +24,11 @@ sudo echo "HandleLidSwitchDocked=suspend" &>> /etc/systemd/logind.conf
 # Then run xbindkeys -p
 # Also may need to add xbindkeys to my .bashrc file
 
+# Setting up terminal:
+- Install zsh following https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZSH
+- Install oh-my-zsh following http://ohmyz.sh/
+
+
 
 TODO
 - pavucontrol

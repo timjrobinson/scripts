@@ -5,7 +5,7 @@ DIR="$(cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd)"
 [ -e ~/.zshrc ] && (grep 'include-rc' ~/.zshrc &>/dev/null || echo 'source ~/scripts/include-rc' >> ~/.zshrc)
 
 [ -e ~/.profile ] && (grep 'include-profile' ~/.profile &>/dev/null || echo 'source ~/scripts/include-profile' >> ~/.profile)
-[ -e ~/.zprofile ] && (grep 'include-profile' ~/.zprofile &>/dev/null || echo 'source ~/scripts/include-profile' >> ~/.zprofile)
+[ -e ~/.profile ] && (grep 'include-profile' ~/.profile &>/dev/null || echo 'source ~/scripts/include-profile' >> ~/.profile)
 
 git config --global core.editor "vim"
 
