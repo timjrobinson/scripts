@@ -2,6 +2,9 @@
 
 DIR="$(cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd)"
 
+[ -e ~/.bashrc ] && (grep 'include-rc-desktop' ~/.bashrc &>/dev/null || echo 'source ~/scripts/include-rc-desktop' >> ~/.bashrc)
+[ -e ~/.zshrc ] && (grep 'include-rc-desktop' ~/.zshrc &>/dev/null || echo 'source ~/scripts/include-rc-desktop' >> ~/.zshrc)
+
 [ -e ~/.profile ] && (grep 'include-profile-desktop' ~/.profile &>/dev/null || echo 'source ~/scripts/include-profile-desktop' >> ~/.profile)
 [ -e ~/.zprofile ] && (grep 'include-profile-desktop' ~/.zprofile &>/dev/null || echo 'source ~/scripts/include-profile-desktop' >> ~/.zprofile)
 
