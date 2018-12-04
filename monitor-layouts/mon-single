@@ -1,6 +1,7 @@
+xrandr --output DP-1-1 --off
 xrandr --output DP1-1 --off
 xrandr --output DP1-2 --off
 xrandr --output DVI-I-1-1 --off
 xrandr --output DVI-I-2-2 --off
-xrandr --output eDP1 --mode 1920x1080 --primary
+xrandr --output eDP-1 --mode 1920x1080 --primary
 

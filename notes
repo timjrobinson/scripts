@@ -39,4 +39,5 @@ TODO
 -- sudo pip install tzupdate (I had to fully switch to root instead of just running this)
 -- sudo tzupdate
 - solaar (software for pairing logitech mice with PC)
+- fzf - Better ctrl + r history
 
