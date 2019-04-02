@@ -11,6 +11,11 @@ fi
 
 PATH="$DIR/:$PATH"
 
+if [ -d $HOME/bin ]; then
+   PATH="$HOME/bin:$PATH"
+fi
+  
+
 mcd ()
 {
     mkdir -p -- "$1" &&
