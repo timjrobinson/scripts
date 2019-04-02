@@ -1,5 +1,5 @@
 DIR="${0:a:h}"
-[ -z "$DIR"] && DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
+[ -z "$DIR" ] && DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
 
 if [[ -f $DIR/aliases ]]; then
     . $DIR/aliases
@@ -16,3 +16,5 @@ mcd ()
     mkdir -p -- "$1" &&
       cd -P -- "$1"
 }
+
+source $DIR/z.sh
