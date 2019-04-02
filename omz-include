@@ -1,0 +1,2 @@
+export ZSH_THEME="robbyrussell"
+export plugins=(git colorize colored-man-pages)

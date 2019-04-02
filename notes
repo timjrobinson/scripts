@@ -28,6 +28,9 @@ sudo echo "HandleLidSwitchDocked=suspend" &>> /etc/systemd/logind.conf
 - Install zsh following https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZSH
 - Install oh-my-zsh following http://ohmyz.sh/
 
+Install Powerline:  
+`sudo apt-get install fonts-powerline`
+
 
 
 TODO
