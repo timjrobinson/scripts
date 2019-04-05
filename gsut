@@ -3,3 +3,4 @@
 
 BRANCH=$(git name-rev --name-only HEAD)
 git branch -u origin/$BRANCH 
+#git branch --set-upstream-to=origin/$BRANCH $BRANCH
