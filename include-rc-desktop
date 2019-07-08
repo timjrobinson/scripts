@@ -1,1 +1,1 @@
-setxkbmap -layout us -option caps:escape
+[ -x "$(command -v setxkbmap)" ] && setxkbmap -layout us -option caps:escape

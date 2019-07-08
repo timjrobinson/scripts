@@ -1,5 +1,5 @@
 #!/bin/bash
 DIR="$(cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd)"
 
-setxkbmap -layout us -option caps:escape
+[ -x "$(command -v setxkbmap)" ] && setxkbmap -layout us -option caps:escape
 $DIR/monitor-layouts/select-monitor

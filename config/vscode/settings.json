@@ -1,0 +1,19 @@
+{
+    "telemetry.enableTelemetry": false,
+    "keyboard.dispatch": "keyCode",
+    "editor.minimap.enabled": false,
+    "workbench.list.openMode": "doubleClick",
+    "editor.renderWhitespace": "all",
+    "explorer.autoReveal": false,
+    "vim.handleKeys": {
+      "<C-a>": false,
+      "<C-x>": false,
+      "<C-c>": false,
+      "<C-v>": false
+    },
+    "[python]": {},
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+    "workbench.editor.revealIfOpen": true,
+    "editor.tabSize": 2
+}
