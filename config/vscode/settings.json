@@ -10,11 +10,16 @@
       "<C-n>": false,
       "<C-x>": false,
       "<C-c>": false,
-      "<C-v>": false
+      "<C-v>": false,
+      "<C-n>": false
     },
     "[python]": {},
     "explorer.confirmDragAndDrop": false,
     "explorer.confirmDelete": false,
     "workbench.editor.revealIfOpen": true,
-    "editor.tabSize": 2
+    "editor.tabSize": 2,
+    "editor.rulers": [
+      100
+    ],
+    "workbench.tree.indent": 20
 }
