@@ -31,6 +31,8 @@ sudo echo "HandleLidSwitchDocked=suspend" &>> /etc/systemd/logind.conf
 Install Powerline:  
 `sudo apt-get install fonts-powerline`
 
+- Set fix-audio to run on startup by adding to crontab @reboot
+
 
 
 TODO
