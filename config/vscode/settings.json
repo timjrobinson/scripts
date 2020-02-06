@@ -1,4 +1,5 @@
 {
+    "editor.rulers": [80, 120],
     "telemetry.enableTelemetry": false,
     "keyboard.dispatch": "keyCode",
     "editor.minimap.enabled": false,
@@ -17,9 +18,17 @@
     "explorer.confirmDragAndDrop": false,
     "explorer.confirmDelete": false,
     "workbench.editor.revealIfOpen": true,
-    "editor.tabSize": 2,
-    "editor.rulers": [
-      100
-    ],
-    "workbench.tree.indent": 20
+    "gitlens.codeLens.enabled": false,
+    "window.zoomLevel": 1,
+    "workbench.tree.indent": 20,
+    "C_Cpp.updateChannel": "Insiders",
+    "workbench.startupEditor": "none",
+    "python.analysis.memory.keepLibraryLocalVariables": true,
+    "javascript.updateImportsOnFileMove.enabled": "never",
+    "cmake.configureOnOpen": false,
+    "workbench.editor.tabSizing": "shrink",
+    "breadcrumbs.enabled": true,
+    "workbench.activityBar.visible": true,
+    "workbench.statusBar.visible": true,
+    "gitlens.mode.statusBar.enabled": false
 }
