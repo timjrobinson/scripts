@@ -19,8 +19,7 @@
     "explorer.confirmDelete": false,
     "workbench.editor.revealIfOpen": true,
     "gitlens.codeLens.enabled": false,
-    "window.zoomLevel": 1,
-    "workbench.tree.indent": 20,
+    "window.zoomLevel": 0,
     "C_Cpp.updateChannel": "Insiders",
     "workbench.startupEditor": "none",
     "python.analysis.memory.keepLibraryLocalVariables": true,
@@ -30,5 +29,8 @@
     "breadcrumbs.enabled": true,
     "workbench.activityBar.visible": true,
     "workbench.statusBar.visible": true,
-    "gitlens.mode.statusBar.enabled": false
+    "gitlens.mode.statusBar.enabled": false,
+    "editor.tabSize": 2,
+    "workbench.tree.indent": 20,
+    "terminal.integrated.shell.linux": "/usr/bin/zsh"
 }
