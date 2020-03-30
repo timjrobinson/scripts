@@ -94,7 +94,8 @@
     },
     {
         "key": "alt+s",
-        "command": "workbench.action.terminal.focus"
+        "command": "workbench.action.terminal.focus",
+        "when": "editorFocus"
     },
     {
         "key": "alt+s",
