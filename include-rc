@@ -23,13 +23,7 @@ if [ -d /opt/ros/melodic ]; then
     source /opt/ros/melodic/local_setup.zsh
 fi
   
-
 export TURTLEBOT3_MODEL=waffle
-
-  
-
-
-  
 
 mcd ()
 {
