@@ -192,6 +192,10 @@ bindsym $mod+Shift+t focus mode_toggle
 ## Modify // Window Layout Mode // <> t ##
 bindsym $mod+t layout toggle tabbed splith splitv
 
+## Copied from i3, stacking and split modes.
+bindsym $mod+s layout stacking
+bindsym $mod+e layout toggle split
+
 ## Modify // Move Window to Workspace 1 - 10 // <><Shift> 0..9 ##
 bindsym $mod+Shift+1 move container to workspace number $ws1
 bindsym $mod+Shift+2 move container to workspace number $ws2
@@ -236,6 +240,13 @@ bindsym $mod+$alt+Ctrl+6 move container to workspace number $ws16; workspace num
 bindsym $mod+$alt+Ctrl+7 move container to workspace number $ws17; workspace number $ws17
 bindsym $mod+$alt+Ctrl+8 move container to workspace number $ws18; workspace number $ws18
 bindsym $mod+$alt+Ctrl+9 move container to workspace number $ws19; workspace number $ws19
+
+## Move Workspace to another monitor
+bindsym $mod+Ctrl+Shift+h move workspace to output left
+bindsym $mod+Ctrl+Shift+j move workspace to output down
+bindsym $mod+Ctrl+Shift+k move workspace to output up
+bindsym $mod+Ctrl+Shift+l move workspace to output right
+
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
