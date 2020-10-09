@@ -35,7 +35,7 @@ floating_modifier $mod
 hide_edge_borders smart
 
 ## Launch // Terminal // <Super> Enter ##
-bindsym $mod+Return exec /usr/bin/x-terminal-emulator
+bindsym $mod+Return exec /usr/bin/st
 
 ## Launch // Browser // <Super><Shift> Enter ##
 bindsym $mod+Shift+Return exec gtk-launch $(xdg-settings get default-web-browser)
@@ -365,7 +365,7 @@ set_from_resource $i3-wm.bar.trayoutput i3-wm.bar.trayoutput none
 set_from_resource $i3-wm.bar.stripworkspacenumbers i3-wm.bar.stripworkspacenumbers yes
 
 # i3xrocks config file. Override this for custom status indicators on the bar.
-set_from_resource $i3-wm.i3xrocks.config i3-wm.i3xrocks.config "/etc/regolith/i3xrocks/config"
+set_from_resource $i3-wm.i3xrocks.config i3-wm.i3xrocks.config "/etc/regolith/i3xrocks/conf.d"
 
 # The bar configuration
 bar {
