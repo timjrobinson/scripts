@@ -33,6 +33,9 @@ Install Powerline:
 
 - Set fix-audio to run on startup by adding to crontab @reboot
 
+Install zsh-nvm plugin:
+`git clone https://github.com/lukechilds/zsh-nvm ~/.oh-my-zsh/custom/plugins/zsh-nvm`
+
 
 
 TODO

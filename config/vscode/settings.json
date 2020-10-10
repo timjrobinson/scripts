@@ -32,5 +32,8 @@
     "gitlens.mode.statusBar.enabled": false,
     "editor.tabSize": 2,
     "workbench.tree.indent": 20,
-    "terminal.integrated.shell.linux": "/usr/bin/zsh"
+    "terminal.integrated.shell.linux": "/usr/bin/zsh",
+    "[javascript]": {
+      "editor.defaultFormatter": "vscode.typescript-language-features"
+    }
 }

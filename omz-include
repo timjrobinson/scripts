@@ -3,4 +3,5 @@ export plugins=(
   git 
   colorize 
   colored-man-pages
+  zsh-nvm
 )
