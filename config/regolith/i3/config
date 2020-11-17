@@ -71,8 +71,8 @@ set_from_resource $ws19 i3-wm.workspace.19.name "19"
 # Launcher dialogs
 ###############################################################################
 
-## Launch // Terminal // <> Enter ##
-bindsym $mod+Return exec /usr/bin/x-terminal-emulator
+## Launch // Terminal // <Super> Enter ##
+bindsym $mod+Return exec /usr/bin/st
 
 bindsym $mod+Ctrl+Shift+s exec /usr/bin/scrot
 
@@ -198,7 +198,7 @@ bindsym $mod+t layout toggle tabbed splith splitv
 bindsym $mod+s layout stacking
 bindsym $mod+e layout toggle split
 
-## Modify // Move Window to Workspace 1 - 10 // <><Shift> 0..9 ##
+## Modify // Move Window to Workspace // <Super><Shift> 0..9 ##
 bindsym $mod+Shift+1 move container to workspace number $ws1
 bindsym $mod+Shift+2 move container to workspace number $ws2
 bindsym $mod+Shift+3 move container to workspace number $ws3
@@ -248,8 +248,6 @@ bindsym $mod+Ctrl+Shift+h move workspace to output left
 bindsym $mod+Ctrl+Shift+j move workspace to output down
 bindsym $mod+Ctrl+Shift+k move workspace to output up
 bindsym $mod+Ctrl+Shift+l move workspace to output right
-
-
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
