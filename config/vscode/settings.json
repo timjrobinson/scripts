@@ -35,5 +35,6 @@
     "terminal.integrated.shell.linux": "/usr/bin/zsh",
     "[javascript]": {
       "editor.defaultFormatter": "vscode.typescript-language-features"
-    }
+    },
+    "extensions.ignoreRecommendations": false
 }
