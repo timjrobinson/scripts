@@ -6,3 +6,5 @@ source /usr/share/powerlevel9k/powerlevel9k.zsh-theme
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+bindkey -r "^V" # Remove pressing ctrl+v inserting that stupid [200 stuff
