@@ -36,5 +36,6 @@
     "[javascript]": {
       "editor.defaultFormatter": "vscode.typescript-language-features"
     },
-    "extensions.ignoreRecommendations": false
+    "extensions.ignoreRecommendations": false,
+    "godot_tools.editor_path": "/home/tim/bin/godot"
 }

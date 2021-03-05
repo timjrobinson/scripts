@@ -28,14 +28,17 @@ sudo echo "HandleLidSwitchDocked=suspend" &>> /etc/systemd/logind.conf
 - Install zsh following https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZSH
 - Install oh-my-zsh following http://ohmyz.sh/
 
-Install Powerline:  
-`sudo apt-get install fonts-powerline`
+Edit .zshrc:
+- Add `source ~/scripts/omz-include` just after the `export ZSH=` 
+- Add `source ~/scripts/include-zshrc` after `source $ZSH/oh-my-zsh.sh`
+
+Install Font and theme:  
+`sudo apt-get install zsh-theme-powerlevel9k fonts-powerline zsh-syntax-highlighting`
 
 - Set fix-audio to run on startup by adding to crontab @reboot
 
 Install zsh-nvm plugin:
 `git clone https://github.com/lukechilds/zsh-nvm ~/.oh-my-zsh/custom/plugins/zsh-nvm`
-
 
 
 TODO
