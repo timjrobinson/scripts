@@ -30,12 +30,17 @@
     "workbench.activityBar.visible": true,
     "workbench.statusBar.visible": true,
     "gitlens.mode.statusBar.enabled": false,
-    "editor.tabSize": 2,
     "workbench.tree.indent": 20,
     "terminal.integrated.shell.linux": "/usr/bin/zsh",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "[javascript]": {
-      "editor.defaultFormatter": "vscode.typescript-language-features"
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "extensions.ignoreRecommendations": false,
-    "godot_tools.editor_path": "/home/tim/bin/godot"
+    "godot_tools.editor_path": "/home/tim/bin/godot",
+    "editor.cursorStyle": "line",
+    "editor.lineNumbers": "on",
+    "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+    "editor.wordWrap": "off",
+    "workbench.tree.expandMode": "doubleClick"
 }
