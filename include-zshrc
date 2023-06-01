@@ -13,5 +13,8 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+bindkey "^[[1;5C" forward-word
+bindkey "^[[1;5D" backward-word
+
 bindkey -r "^V" # Remove pressing ctrl+v inserting that stupid [200 stuff
 POWERLEVEL9K_DISABLE_CONFIGURATION_WIZARD=true
