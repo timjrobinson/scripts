@@ -7,27 +7,3 @@ DIR="$(cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd)"
 
 [ -e ~/.profile ] && (grep 'include-profile-desktop' ~/.profile &>/dev/null || echo 'source ~/scripts/include-profile-desktop' >> ~/.profile)
 [ -e ~/.zprofile ] && (grep 'include-profile-desktop' ~/.zprofile &>/dev/null || echo 'source ~/scripts/include-profile-desktop' >> ~/.zprofile)
-
-# For Scrot screenshots
-mkdir -p ~/Pictures/screenshots
-
-if [ -z "$(which xbacklight)" ]; then
-sudo apt-get update
-sudo apt-get install xbacklight
-fi
-
-if [ -z "$(which playerctl)" ]; then
-wget https://github.com/acrisci/playerctl/releases/download/v0.5.0/playerctl-0.5.0_amd64.deb -P /tmp/
-sudo dpkg -i /tmp/playerctl-0.5.0_amd64.deb
-fi
-
-echo "Do you want to install i3wm?"
-read ii3wm
-[[ "$ii3wm" =~ ^[Yy]$ ]] && $DIR/install-i3wm
-
-echo "Do you want to install spotify?"
-read ispot
-[[ "$ispot" =~ ^[Yy]$ ]] && $DIR/install-spotify
-
-sudo grep "^HandleLidSwitchDocked=" /etc/systemd/logind.conf || sudo echo "HandleLidSwitchDocked=hibernate" >> /etc/systemd/logind.conf
-sudo grep "^HandleLidSwitch=" /etc/systemd/logind.conf || sudo echo "HandleLidSwitch=hibernate" >> /etc/systemd/logind.conf

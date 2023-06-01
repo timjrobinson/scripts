@@ -5,25 +5,6 @@ Setup tasks that can't be scripted
 Run `visudo`
 At the end insert `tim ALL=(ALL) NOPASSWD:ALL`
 
-- Other
-Add passwd to root user, same as local user, so that i3lock doesn't completely lock me out if I accidently run it as root. 
-
-# Disable nautilus desktop background:
-gsettings set org.gnome.desktop.background show-desktop-icons false
-
-
-# Fixing Hibernate on HP Elitebook
-sudo echo "HandleLidSwitchDocked=suspend" &>> /etc/systemd/logind.conf
-
-# Binding scrot to ctrl + shift + 4 (like mac screenshot area)
-# Add this to ~/.xbindkeysrc
-
-"~/scripts/screenshot-area"
-  control+shift + 4
-
-# Then run xbindkeys -p
-# Also may need to add xbindkeys to my .bashrc file
-
 # Setting up terminal:
 - Install zsh following https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZSH
 - Install oh-my-zsh following http://ohmyz.sh/
@@ -32,23 +13,21 @@ Edit .zshrc:
 - Add `source ~/scripts/omz-include` just after the `export ZSH=` 
 - Add `source ~/scripts/include-zshrc` after `source $ZSH/oh-my-zsh.sh`
 
-Install Font and theme:  
-`sudo apt-get install zsh-theme-powerlevel9k fonts-powerline zsh-syntax-highlighting`
+## Install Font and theme:  
 
-- Set fix-audio to run on startup by adding to crontab @reboot
+https://github.com/romkatv/powerlevel10k
 
-Install zsh-nvm plugin:
+## Install zsh-nvm plugin:
 `git clone https://github.com/lukechilds/zsh-nvm ~/.oh-my-zsh/custom/plugins/zsh-nvm`
+
+## Map caps lock to escape:
+
+Install gnome tweaks:
+`sudo apt install gnome-tweak-tool`
+
+Go to keyboards and mouse -> additional layout options -> capslock behavior.
 
 
 TODO
-- pavucontrol
-- atom
-- skype
-- tzupdate
--- sudo apt-get update install python-pip
--- sudo pip install tzupdate (I had to fully switch to root instead of just running this)
--- sudo tzupdate
-- solaar (software for pairing logitech mice with PC)
 - fzf - Better ctrl + r history
 
