@@ -101,5 +101,34 @@
         "key": "alt+s",
         "command": "workbench.action.focusActiveEditorGroup",
         "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+shift+k",
+        "command": "-editor.action.deleteLines",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+alt+right",
+        "command": "-workbench.action.moveEditorToNextGroup"
+    },
+    {
+        "key": "ctrl+alt+right",
+        "command": "workbench.action.navigateForwardInNavigationLocations"
+    },
+    {
+        "key": "ctrl+alt+left",
+        "command": "-workbench.action.moveEditorToPreviousGroup"
+    },
+    {
+        "key": "ctrl+alt+left",
+        "command": "workbench.action.navigateBackInNavigationLocations"
+    },
+    {
+        "key": "ctrl+shift+k",
+        "command": "editor.action.selectHighlights"
+    },
+    {
+        "key": "ctrl+shift+'",
+        "command": "editor.action.transformToLowercase"
     }
 ]

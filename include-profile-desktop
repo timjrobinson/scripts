@@ -1,4 +1,2 @@
 #!/bin/bash
 DIR="$(cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd)"
-
-[ -x "$(command -v setxkbmap)" ] && setxkbmap -layout us -option caps:escape

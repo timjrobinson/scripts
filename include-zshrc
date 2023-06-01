@@ -2,7 +2,7 @@ DIR="${0:a:h}"
 
 source $DIR/include-rc
 source $DIR/include-rc-desktop
-source /usr/share/powerlevel9k/powerlevel9k.zsh-theme
+source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
