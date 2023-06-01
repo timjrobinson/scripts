@@ -70,6 +70,10 @@ bindsym $mod+$i3-wm.binding.focus_toggle focus mode_toggle
 set_from_resource $i3-wm.binding.layout_mode i3-wm.binding.layout_mode t
 bindsym $mod+$i3-wm.binding.layout_mode layout toggle tabbed splith splitv
 
+## Copied from i3, stacking and split modes.
+bindsym $mod+s layout stacking
+bindsym $mod+e layout toggle split
+
 ## Modify // Move Window to Workspace 1 - 10 // <><Shift> 0..9 ##
 bindsym $mod+Shift+$ws1_key move container to workspace number $ws1
 bindsym $mod+Shift+$ws2_key move container to workspace number $ws2
