@@ -25,7 +25,6 @@
     "cmake.configureOnOpen": false,
     "workbench.editor.tabSizing": "shrink",
     "breadcrumbs.enabled": true,
-    "workbench.activityBar.visible": true,
     "workbench.statusBar.visible": true,
     "gitlens.mode.statusBar.enabled": false,
     "workbench.tree.indent": 20,
@@ -55,5 +54,7 @@
       "plaintext": false,
       "markdown": false,
       "scminput": false
-    }
+    },
+    "json.format.keepLines": true,
+    "cairo1.languageServerPath": "/home/tim/projects/cairo/target/release/cairo-language-server"
 }

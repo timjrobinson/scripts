@@ -9,3 +9,5 @@ if [ -n "$ZSH_VERSION" ]; then
 	HISTSIZE=999999999
 	SAVEHIST=$HISTSIZE
 fi
+
+export ETH_RPC_URL=http://192.168.50.104:8545
