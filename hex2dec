@@ -1,10 +1,12 @@
 #!/bin/bash
 
-# Read from standard input
+# Read from standard input and remove quotes if present
 read hex
+hex=${hex//\"/}
 
 # Convert hexadecimal to decimal
 decimal=$(printf "%d\n" $hex)
 
 # Output the decimal value
 echo $decimal
+
