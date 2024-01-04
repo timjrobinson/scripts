@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Read from standard input
+read hex
+
+# Convert hexadecimal to decimal
+decimal=$(printf "%d\n" $hex)
+
+# Output the decimal value
+echo $decimal
