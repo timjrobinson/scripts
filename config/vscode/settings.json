@@ -56,5 +56,6 @@
       "scminput": false
     },
     "json.format.keepLines": true,
-    "cairo1.languageServerPath": "/home/tim/projects/cairo/target/release/cairo-language-server"
+    "cairo1.languageServerPath": "/home/tim/projects/cairo/target/release/cairo-language-server",
+    "rust-analyzer.inlayHints.typeHints.enable": false
 }

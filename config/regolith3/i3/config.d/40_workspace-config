@@ -1,0 +1,3 @@
+## Copied from i3, stacking and split modes.
+bindsym $mod+s layout stacking
+bindsym $mod+e layout toggle split
